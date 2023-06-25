@@ -6,9 +6,6 @@ Custom code to compute **centripetal propagation** patterns (delay maps) from **
 
 This image illustrates mean fluorescence (left) and computed delay maps (right). Delay maps are organized such that positive delays are close to astrocytic somata and negative delays far from somata (middle). These delay maps illustrate that astrocytic calcium signals propagate from distal processes to somatic compartments for individual astrocytes.
 
-
-
-
 ### How the algorithm works
 
 The code computes the delay with respect to a reference time trace for each pixel of a 3D movie. This enables to extract typical spatio-temporal delays with respect to a mean time trace across the movie. It works best for either long or relatively noise-free movies. The details of the algorithm are described in Fig. 6 and the associated supplementary figures in **[this preprint](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v1.full)**.
@@ -27,6 +24,15 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 <p align="center"><img src="https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/blob/main/Example_astrocyte_delay_map_Github.png"  width="55%"></p>
 
+### When will centripetal propagation patterns be visible?
+
+- Centripetal propagation requires either noise-less or rather long recordings. We denoised our recordings and used 10-20 min recordings.
+
+- Centripetal propagation requires behavioral events that lead to arousal, e.g., running episodes or negative valence-stimuli like air puffs.
+
+- Centripetal propagation requires neuromodulation as control factor. Centripetal propagation will normally not be observed under anesthesia or in slices.
+
+- We do not know whether astrocytes other brain regions other than hippocampus and cortex will also exhibit centripetal propagation.
 
 ### How to cite this work
 
