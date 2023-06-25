@@ -4,17 +4,17 @@ Custom code to compute **centripetal propagation** patterns from **astrocytic ca
 
 ### How the algorithm works
 
-The code computes the delay with respect to a reference time trace for each pixel of a 3D movie. This enables to extract typical spatio-temporal delays with respect to a mean time trace across the movie. It works best for either long or relatively noise-free movies. The details of the algorithm are described in **[this preprint](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v1.full)**.
+The code computes the delay with respect to a reference time trace for each pixel of a 3D movie. This enables to extract typical spatio-temporal delays with respect to a mean time trace across the movie. It works best for either long or relatively noise-free movies. The details of the algorithm are described in Fig. 6 and the associated supplementary figures in **[this preprint](https://www.biorxiv.org/content/10.1101/2022.08.16.504030v1.full)**.
 
 ### How to use the algorithm
 
-- The code is provided as scripts in *Matlab* (tested with Matlab R2020b) and *Python 3* (tested with Python 3.8) and with an example dataset (small 80x80 FOV excerpt covering a single astrocyte).
-  
 - The code includes extensive comments and should be mostly self-explanatory.
 
-- The small FOV excerpt was chosen to minimize the size of the Github repository. It is possible to run the code on much larger files.
+- The script uses a calcium imaging recording as a tif-file and produces a delay map as shown here.
 
-- The script uses a calcium imaging recording as a tif-file and produces a delay map as shown here:
+- The code is provided as scripts in *Matlab* (tested with Matlab R2020b) and *Python 3* (tested with various Python 3 versions) and with an example dataset (small 80x80 FOV excerpt covering a single astrocyte).
+
+- The small FOV excerpt was chosen to minimize the size of the Github repository. It is possible to run the code on much larger files.
 
 <p align="center"><img src="https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/blob/main/Example_astrocyte_delay_map_Github.png"  width="55%"></p>
 
