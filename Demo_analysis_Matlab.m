@@ -27,7 +27,7 @@ clear Corr_maps_all
 for kkk = 1:numel(filenames)
     
     filename = fullfile(filenames(kkk).folder,filenames(kkk).name);
-    disp(['Computing delay map for',32,filenames(kkk).name],'.');
+    disp(['Computing delay map for',32,filenames(kkk).name,'.']);
 
     
     %% Read raw data from hard disk
@@ -73,12 +73,12 @@ for kkk = 1:numel(filenames)
     max_delay = 30; % in #frames; do increase value if the frame rate is higher
     
     Corr_map = zeros(size(movie,1),size(movie,2));
-    for j = 1:size(movie,2)
+    for j = 1:size(movie,1)
         % to speed up the program, replace the following line with this code: 
-        % parfor k = 1:size(movie,1) (requires parallel computing toolbox)
-        for k = 1:size(movie,1)
+        % parfor k = 1:size(movie,2)% (requires parallel computing toolbox)
+        for k = 1:size(movie,2)
             % extract time trace of this pixel
-            trace = squeeze( mean(mean(movie(k,j,:),1),2));
+            trace = squeeze( mean(mean(movie(j,k,:),1),2));
             % initialize cross_correlation vector
             cross_correlation = zeros(2*max_delay+1,1);
             for kk = -max_delay:max_delay
@@ -86,9 +86,9 @@ for kkk = 1:numel(filenames)
                 X = mean_activity;
                 Y = circshift(trace,[kk 0]);
                 if kk >= 0
-                    cross_correlation(kk+31) = corr(X(kk+1:end),Y(kk+1:end));
+                    cross_correlation(kk+max_delay+1) = corr(X(kk+1:end),Y(kk+1:end));
                 else
-                    cross_correlation(kk+31) = corr(X(1:end+kk),Y(1:end+kk));
+                    cross_correlation(kk+max_delay+1) = corr(X(1:end+kk),Y(1:end+kk));
                 end
             end
             % find peak of the cross-correlation
@@ -115,10 +115,12 @@ delay_map = mean(Corr_maps_all_concatenated,3)/framerate;
 
 
 %% Visualize results
-figure(77), imagesc(delay_map); colormap(parula); caxis([-2 2]); colorbar; axis equal off
+figure(77), imagesc(delay_map(:,:)); colormap(parula); caxis([-2 2]); colorbar; axis equal off
 title('Map of delays (s)')
+set(gcf,'color','w');
 
 figure(78), imagesc(ref_excerpt); colormap(gray); caxis([quantile(ref_excerpt(:),0.0) quantile(ref_excerpt(:),0.95)]); axis equal off
 title('Anatomical reference')
+set(gcf,'color','w');
 
 
