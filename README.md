@@ -27,4 +27,4 @@ If you use these scripts in its original or in a  modified version, please cite 
 
 ### Questions?
 
-Any questions should be be addressed to [Peter Rupprecht](mailto:p.t.r.rupprecht+centripetal+propagation@gmail.com). Alternatively, file an issue on our [Github page](https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/issues).
+Any questions should be addressed to [Peter Rupprecht](mailto:p.t.r.rupprecht+centripetal+propagation@gmail.com). Alternatively, file an issue on our [Github page](https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/issues).
