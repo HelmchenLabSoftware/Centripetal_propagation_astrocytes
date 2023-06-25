@@ -19,7 +19,7 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 - The code is not optimized for performance in order to keep it as simple as possible.
 
-- The scripts (`Demo_analysis_Matlab.m` or `Demo_analysis_Python.py`) use a calcium imaging recording as a tif-file and produce a delay map as shown here.
+- The scripts `Demo_analysis_Matlab.m` and `Demo_analysis_Python.py` use a calcium imaging recording as a tif-file and produce a delay map as shown here.
 
 - The code is provided as scripts in *Matlab* (tested with Matlab R2020b) and *Python 3* (tested with various Python 3 versions) and with an example dataset (small 80x80 FOV excerpt covering a single astrocyte). The Python version requires the standard packages `numpy`, `glob`, `tifffile`, `skimage`, and `matplotlib` for visualization.
 
