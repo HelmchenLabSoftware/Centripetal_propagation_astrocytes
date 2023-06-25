@@ -26,7 +26,7 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 ### When will centripetal propagation patterns be visible?
 
-- Centripetal propagation requires either noise-less or rather long recordings. We denoised our recordings and used 10-20 min recordings.
+- Centripetal propagation requires either noise-less or rather long recordings. We denoised our recordings and used 10-20 min recordings. Patterns might however also be visible in short recordings, depending on the recorded calcium activity and behaviors.
 
 - Centripetal propagation requires behavioral events that lead to arousal, e.g., running episodes or negative valence-stimuli like air puffs.
 
