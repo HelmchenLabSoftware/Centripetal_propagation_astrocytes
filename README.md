@@ -10,6 +10,8 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 - The code includes extensive comments and should be mostly self-explanatory.
 
+- The code is not optimized for performance in order to keep it as simple as possible.
+
 - The script uses a calcium imaging recording as a tif-file and produces a delay map as shown here.
 
 - The code is provided as scripts in *Matlab* (tested with Matlab R2020b) and *Python 3* (tested with various Python 3 versions) and with an example dataset (small 80x80 FOV excerpt covering a single astrocyte).
