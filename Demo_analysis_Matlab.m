@@ -1,7 +1,7 @@
 
 %% Compute delay maps from astrocytic in vivo calcium imaging data
 
-% Code written by Peter Rupprecht (rupprecht@hifo.uzh.ch) in 2023
+% Code written by Peter Rupprecht (p.t.r.rupprecht+centripetal+propagation@gmail.com) in 2023
 
 % Code is deposited in this repository: https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes
 % See this repository for an explanation of the code
