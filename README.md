@@ -1,6 +1,11 @@
 ## Centripetal propagation of calcium signals in astrocytes
 
-Custom code to compute **centripetal propagation** patterns from **astrocytic calcium** recordings using pixel-wise **correlation functions**.
+Custom code to compute **centripetal propagation** patterns (delay maps) from **astrocytic calcium** recordings using pixel-wise **correlation functions**.
+
+The image below illustrates mean fluorescence (left) and computed delay maps (right). Delay maps are organized such that positive delays are close to astrocytic somata and negative delays far from somata (middle). These delay maps illustrate that astrocytic calcium signals - on average - propagate from distal processes to somatic compartments for individual astrocytes.
+
+<p align="center"><img src="https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/blob/main/Github%20centripetal%20propagation.png"  width="65%"></p>
+
 
 ### How the algorithm works
 
