@@ -1,7 +1,7 @@
 
 %% Compute delay maps from astrocytic in vivo calcium imaging data
 
-% Code written by Peter Rupprecht (p.t.r.rupprecht+centripetal+propagation@gmail.com) in 2023
+% Code written by Peter Rupprecht (rupprecht@hifo.uzh.ch) in 2023
 
 % Code is deposited in this repository: https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes
 % See this repository for an explanation of the code
@@ -95,7 +95,7 @@ for kkk = 1:numel(filenames)
             [ix,xi] = max(cross_correlation);
             delay = xi - max_delay;
             % assign peak delay to the delay map pixel
-            Corr_map(j,k) = delay;
+            Corr_map(j,k) = -delay;
         end
     end
     % save in one data structure
@@ -115,7 +115,9 @@ delay_map = mean(Corr_maps_all_concatenated,3)/framerate;
 
 
 %% Visualize results
-figure(77), imagesc(delay_map(:,:)); colormap(parula); caxis([-2 2]); colorbar; axis equal off
+
+cmap = parula;
+figure(77), imagesc(delay_map); colormap(cmap(end:-1:1,:)); caxis([-2 2]); colorbar; axis equal off
 title('Map of delays (s)')
 set(gcf,'color','w');
 
