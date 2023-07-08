@@ -32,7 +32,7 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 - Centripetal propagation requires neuromodulation as control factor. Centripetal propagation will normally not be observed under anesthesia or in slices.
 
-- We do not know whether astrocytes other brain regions other than hippocampus and cortex will also exhibit centripetal propagation.
+- We do not know whether astrocytes in brain regions other than hippocampus and cortex will also exhibit centripetal propagation.
 
 ### How to cite this work
 
