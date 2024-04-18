@@ -93,7 +93,7 @@ for kkk = 1:numel(filenames)
             end
             % find peak of the cross-correlation
             [ix,xi] = max(cross_correlation);
-            delay = xi - max_delay;
+            delay = xi - max_delay - 1;
             % assign peak delay to the delay map pixel
             Corr_map(j,k) = -delay;
         end
