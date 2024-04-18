@@ -94,7 +94,7 @@ for kkk,filename in enumerate(filenames):
 
             # find peak of the cross-correlation
             xi = np.argmax(cross_correlation);
-            delay = xi - max_delay - 1
+            delay = xi - max_delay
             # assign peak delay to the delay map pixel
             Corr_map[j,k] = -delay
 
