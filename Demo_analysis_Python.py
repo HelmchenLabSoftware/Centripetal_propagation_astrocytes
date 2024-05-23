@@ -15,9 +15,9 @@ Code is deposited in this repository: https://github.com/HelmchenLabSoftware/Cen
 See this repository for an explanation of the code
 
 Please cite this paper when using the code:
-Rupprecht, Peter, Christopher M. Lewis, and Fritjof Helmchen.
-"Centripetal integration of past events by hippocampal astrocytes."
-https://www.biorxiv.org/content/10.1101/2022.08.16.504030v1
+Rupprecht P, Duss SN, Becker D, Lewis CM, Bohacek J, and Helmchen F.
+"Centripetal integration of past events by hippocampal astrocytes regulated by locus coeruleus."
+https://www.nature.com/articles/s41593-024-01612-8
 
 
 """
