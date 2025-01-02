@@ -20,7 +20,7 @@ The code computes the delay with respect to a reference time trace for each pixe
 
 - The code is provided as scripts in *Matlab* (tested with Matlab R2020b) and *Python 3* (tested with various Python 3 versions) and with an example dataset (small 80x80 FOV excerpt covering a single astrocyte). The Python version requires the standard packages `numpy`, `glob`, `tifffile`, `skimage`, and `matplotlib` for visualization.
 
-- The small FOV excerpt was chosen to minimize the size of the Github repository. It is possible to run the code on much larger files.
+- The small FOV excerpt was chosen to minimize the size of the Github repository. It is possible to run the code on much larger files. If you need help with speeding up the code for large datasets, do not hesitate to reach out!
 
 <p align="center"><img src="https://github.com/HelmchenLabSoftware/Centripetal_propagation_astrocytes/blob/main/Example_astrocyte_delay_map_Github.png"  width="55%"></p>
 
